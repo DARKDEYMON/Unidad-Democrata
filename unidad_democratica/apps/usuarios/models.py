@@ -38,6 +38,7 @@ class nivel_3(models.Model):
 	sircunscripcion = models.CharField(max_length=100, choices=a)
 	telefono = models.IntegerField()
 	lugar = models.CharField(max_length=100, choices=b)
+	municio_recinto = models.CharField(max_length=100)
 	class Meta:
 		verbose_name = _('Nivel 3')
 		verbose_name_plural = _('Nivel 3')
