@@ -42,3 +42,17 @@ class nivel_3(models.Model):
 	class Meta:
 		verbose_name = _('Nivel 3')
 		verbose_name_plural = _('Nivel 3')
+class nivel_4(models.Model):
+	nombre = models.CharField(max_length=100)
+	apellido_paterno = models.CharField(max_length=100)
+	apellido_materno = models.CharField(max_length=100)
+	fecha = models.DateField(auto_now=True)
+	ci = models.IntegerField()
+	sircunscripcion = models.CharField(max_length=100, choices=a)
+	telefono = models.IntegerField()
+	lugar = models.CharField(max_length=100, choices=b)
+	municio_recinto = models.CharField(max_length=100)
+	mesa =  models.IntegerField(null=False)
+	class Meta:
+		verbose_name = _('Nivel 4')
+		verbose_name_plural = _('Nivel 4')
